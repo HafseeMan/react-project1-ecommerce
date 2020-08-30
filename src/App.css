@@ -1,0 +1,132 @@
+:root{
+  --darkPurple: rgb(122, 73, 100);
+  --darkBlue: rgb(105, 101, 167);
+  --gray: gray;
+  --mainDark: rgba(0, 0, 0, 0.767);
+  --bright: rgb(228, 210, 47);
+  --mainWhite: white;
+}
+body{
+  font-family: 'Open Sans', sans-serif !important;
+  color: var(--mainDark) !important;
+}
+#homepage{
+  background-image: url('bg-image.jpg');
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+
+}
+.text-title{
+  font-family: 'Crimson Text', serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue{
+  color: var(--darkBlue);
+}
+.text-bright{
+  color: var(--bright);
+}
+.bg-dark-transparent{
+  background-color: var(--mainDark);
+}
+
+.navbar-brand {
+  width: 50px;
+  font-size: 1.3rem;
+}
+
+.btn-outline-dark:hover{
+  border: 1px solid var(--bright) !important;
+  color: var(--bright) !important;
+}
+
+.btn-outline-light:hover{
+ background-color: var(--bright) !important;
+ color: white !important;
+}
+.bg-bright{
+  background-color: var(--bright) !important;
+}
+
+/*PRODUCTS PAGE*/
+.card{
+  transition: all 1s linear !important;
+}
+.card-footer{
+  background:  rgba(247, 247, 247);
+  border-top: transparent !important;
+}
+.card:hover{
+  border: 0.04rem solid gray;
+  box-shadow: 2px 2px 5px 0px gray;
+}
+
+.img-container {
+  position: relative;
+  overflow: hidden;
+}
+.card-img-top{
+  transition:all 1s linear;
+}
+.img-container:hover .card-img-top{
+  transform: scale(1.2);
+}
+
+.card-btn{
+  position: absolute; 
+  bottom:0;
+  right: 0;
+  padding:0.2rem 0.4rem;
+  background-color: var(--mainDark);
+  color: var(--bright);
+  font-size: 1.4rem;
+  border-radius: 0.5rem 0 0 0;
+  transform: translate(100%, 100%);
+}
+
+.img-container:hover .card-btn{
+  transform: translate(0,0);
+}
+/*Add to cart button*/
+.card-btn:hover{
+  color: var(--bright);
+  cursor: pointer;
+}
+.slider{
+  background-image: url('african-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+.slider h3{
+  color: var(--bright);
+}
+/*MODAL*/
+.modal-container{
+  position: fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  background: rgba(0,0,0,0.3);
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+#modal{
+  background: var(--mainWhite)
+}
+
+/*CART PAGE*/
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: var(--mainDark);
+}

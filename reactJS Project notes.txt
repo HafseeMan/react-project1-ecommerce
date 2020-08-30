@@ -1,0 +1,132 @@
+STEPS:
+
+* To run and setup on chrome
+terminal> new terminal > npm start
+
+
+* clear terminal... clear
+* installing bootstrap/google fonts 
+> npm install --save bootstrap
+(App.js)
+... import 'bootstrap/dist/css/bootstrap.min.css'
+
+
+... copy and paste script linking to fonts in index.tml
+... copy paste cdn link  for font awesome icons
+
+NB:
+When using bootsrtap to change colors and fonts use ... !important;
+No need to use"important" flag on classes I created
+
+* USING VARIABLES FOR COLORS IN CSS
+(css)
+
+:root{
+  --mainBlue: #2a2a72:
+  --lightBlue:
+  --mainWhite:
+  --mainDark:
+}
+
+..
+background: var(--mainWhite) !important;
+
+
+*REACTFRAGMENTS:... allow us to simulate ours components. To wrap them without creating an extra parent div.
+*Component files are name Capitalized ("first letter")
+* React Router must be installed by npm tp be used:
+NB: INTERNET NEEDED
+(Terminal)
+> clear
+> npm install --save react-router-dom
+
+*REACT ROUTERS
+ The four things imported;
+1. BrowserRouter // to hold the info for each
+2. Switch // to swap between each
+3. Link 
+
+
+*To fix the / path problem:
+1. place path"/".. as the last one mentioned
+or 2. use exact path = "/" instead of path = "/"
+
+*To make comments:
+    {  /* */ }
+
+*To create a link in component.
+example:
+
+1. import Link from react-router-dom
+
+2. <Link to="/">
+     <img src={logo} alt="store" className="navbar-brand"/>
+   </Link>
+
+3. import logo from "../logo.svg";
+
+
+*Use rem not px.. it is responsive
+
+* COMPONENTS: CLASSES... FUNCTIONS.(For objects like title)
+*Images used in data are saved in "public" not src. since they are not imported.
+* creating onclick events. DO NOT... onclick ={console.log("")}
+use onclick ={()=> console.log("")}
+... or the function would run implicitly without being clicked.
+
+*To catch errors in data.
+import PropTypes from 'prop-types', ... in product.js
+
+* Creating a useful find function
+
+getItem = (id) =>{
+        const product = this.state.products.find(item => item.id ===id)
+        return product;
+    }
+
+To Use:
+handleDetail = (id) =>{
+     const product = this.getItem(id)
+     this.setState(()=>{
+         return {detailProduct:product}
+     })
+    }
+
+*ACCESS DATA (in state) IN AN ARRAY BY DESTRUCTURING
+ addToCart = id =>{
+        let tempProducts = [...this.state.products]
+    }
+    
+*Creating page component
+1. create component.js in src/component
+2. import in App.js
+3. add to or outside router in App.js
+
+
+
+*To place exactly in center: display: flex;
+*When adding more values to the state... return (value={{...this.state)    takes care of all.
+
+*Placing Cart.js in a folder with other related smaller components. To make Cart.js the main folder inside:
+method 1: import the file... and name it index.js
+method 2: import the file... create package.json inside with {"main":"Cart.js"} inside
+method 3: import the file/Cart.js 
+
+
+*For component to have access to all value properties
+   <CartList value={value}/>
+
+4:37:11   1:41:03
+
+* To add inline styling in JSX:
+  <img src={img} 
+                style={{width:"5rem", height:"5rem"}} 
+                className="img img-rounded-circle" 
+                alt="product"
+                />
+* For something to not display in large view
+className="d-lg-none"
+
+*Debugging: Function not recognised? make sure it is "rendered"
+
+4:55:19
