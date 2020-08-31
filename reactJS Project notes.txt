@@ -129,4 +129,10 @@ className="d-lg-none"
 
 *Debugging: Function not recognised? make sure it is "rendered"
 
-4:55:19
+*For a functional component to have access to rporpertiesor functions... 
+You "destructure"
+
+eg.   
+export default function CartTotals({value}){
+const {cartSubTotal, cartTotal,clearCart} =  value;    
+
