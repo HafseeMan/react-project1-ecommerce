@@ -13,7 +13,7 @@ export const storeProducts = [
     {
         id: 2,
         title: "Fashionista",
-        img: "img/product9.jpg",
+        img: "img/product8.jpg",
         price: 15000,
         info:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad pariatur sapiente sed saepe dicta dolor quod delectus? Quia eveniet qui ea itaque, unde suscipit beatae officia nisi quisquam corporis excepturi ratione, cupiditate rerum veritatis.",
@@ -24,7 +24,7 @@ export const storeProducts = [
     {
         id: 3,
         title: "Extravagenza Ankara",
-        img: "img/product8.jpg",
+        img: "img/product9.jpg",
         price: 20000,
         info:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ad pariatur sapiente sed saepe dicta dolor quod delectus? Quia eveniet qui ea itaque, unde suscipit beatae officia nisi quisquam corporis excepturi ratione, cupiditate rerum veritatis.",
